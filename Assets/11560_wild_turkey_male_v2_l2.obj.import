@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/11560_wild_turkey_male_v2_l2.obj-73e741c0c304d3ea94c68b5d612588d7.mesh"
+
+[deps]
+
+files=[ "res://.import/11560_wild_turkey_male_v2_l2.obj-73e741c0c304d3ea94c68b5d612588d7.mesh" ]
+
+source_file="res://Assets/11560_wild_turkey_male_v2_l2.obj"
+dest_files=[ "res://.import/11560_wild_turkey_male_v2_l2.obj-73e741c0c304d3ea94c68b5d612588d7.mesh", "res://.import/11560_wild_turkey_male_v2_l2.obj-73e741c0c304d3ea94c68b5d612588d7.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

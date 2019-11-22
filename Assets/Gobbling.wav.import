@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Gobbling.wav-14d7776ed024b49c0a827cbd6ec36699.sample"
+
+[deps]
+
+source_file="res://Assets/Gobbling.wav"
+dest_files=[ "res://.import/Gobbling.wav-14d7776ed024b49c0a827cbd6ec36699.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
