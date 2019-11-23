@@ -46,22 +46,22 @@ func _ready():
 [sub_resource type="SpatialMaterial" id=2]
 albedo_texture = ExtResource( 1 )
 
-[sub_resource type="CapsuleShape" id=3]
-radius = 4.65443
+[sub_resource type="SphereShape" id=3]
+radius = 29.3166
 
 [node name="Mob" type="KinematicBody"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 0.998053, 0, 0, 0 )
+transform = Transform( -0.989712, 0.143071, 0, -0.143071, -0.989712, 0, 0, 0, 0.998053, 0, 0, 0 )
 script = SubResource( 1 )
 
 [node name="MeshInstance" type="MeshInstance" parent="."]
-transform = Transform( 0.5, 0, 0, 0, -2.18557e-008, -0.5, 0, 0.5, -2.18557e-008, 0, 0, 0 )
+transform = Transform( 0.5, 4.44089e-016, 2.23517e-008, 2.23517e-008, -2.18557e-008, -0.5, 0, 0.5, -2.18557e-008, 0, 0, 0 )
 material_override = SubResource( 2 )
 cast_shadow = 0
 mesh = ExtResource( 2 )
 material/0 = null
 
 [node name="CollisionShape" type="CollisionShape" parent="."]
-transform = Transform( 1, 0, 0, 0, -4.37114e-008, -1, 0, 1, -4.37114e-008, 0, 0, 0 )
+transform = Transform( 1, 8.88178e-016, 4.47035e-008, 4.47035e-008, -4.37114e-008, -1, 0, 1, -4.37114e-008, -1.29957, -8.98994, 0 )
 shape = SubResource( 3 )
 
 [node name="HealthBar3D" parent="." instance=ExtResource( 3 )]

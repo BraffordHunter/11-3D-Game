@@ -8,17 +8,18 @@ albedo_texture = ExtResource( 2 )
 
 [sub_resource type="SphereMesh" id=2]
 material = SubResource( 1 )
-radius = 0.2
-height = 0.2
+radius = 0.4
+height = 0.8
 
 [sub_resource type="SpatialMaterial" id=3]
 albedo_color = Color( 1, 0.831373, 0.231373, 1 )
 metallic_specular = 1.0
 
 [sub_resource type="SphereShape" id=4]
-radius = 0.1
+radius = 0.429416
 
 [node name="Bullet" type="Area"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.56901, 0 )
 script = ExtResource( 1 )
 
 [node name="MeshInstance" type="MeshInstance" parent="."]
