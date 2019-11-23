@@ -1,8 +1,10 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Scripts/World.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/Crate.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/Mob.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scenes/Mob.gd" type="Script" id=5]
 
 [sub_resource type="SpatialMaterial" id=1]
 albedo_color = Color( 0.286275, 0.313726, 0.341176, 1 )
@@ -28,19 +30,13 @@ material/0 = null
 [node name="CollisionShape" type="CollisionShape" parent="Ground"]
 shape = SubResource( 3 )
 
-[node name="Crate" parent="." groups=[
-"Crate",
-] instance=ExtResource( 2 )]
+[node name="Crate" parent="." instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.67044, 1.37587, -2.57926 )
 
-[node name="Crate2" parent="." groups=[
-"Crate",
-] instance=ExtResource( 2 )]
+[node name="Crate2" parent="." instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.54735, 2.63189, 0.0999665 )
 
-[node name="Crate3" parent="." groups=[
-"Crate",
-] instance=ExtResource( 2 )]
+[node name="Crate3" parent="." instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.56277, 0.647794, 0.439583 )
 
 [node name="DirectionalLight" type="DirectionalLight" parent="."]
@@ -79,3 +75,8 @@ margin_right = 1011.0
 margin_bottom = 22.0
 text = "Lives: 3"
 align = 2
+
+[node name="Mob" parent="." instance=ExtResource( 4 )]
+transform = Transform( -0.0567071, 0, 0, 0, -0.0567071, 0, 0, 0, -0.062622, 0, 0, 0 )
+input_capture_on_drag = true
+script = ExtResource( 5 )

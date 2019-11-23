@@ -1,24 +1,39 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://Mob.gd" type="Script" id=1]
-[ext_resource path="res://HealthBar3D.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Assets/11560_wild_turkey_male_v2_l2.obj" type="ArrayMesh" id=1]
+[ext_resource path="res://Scenes/HealthBar3D.tscn" type="PackedScene" id=2]
 
-[sub_resource type="CapsuleMesh" id=1]
-radius = 0.5
+[sub_resource type="GDScript" id=3]
+script/source = "extends KinematicBody
+
+# Declare member variables here. Examples:
+# var a = 2
+# var b = \"text\"
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+#func _process(delta):
+#	pass
+"
 
 [sub_resource type="CapsuleShape" id=2]
-radius = 0.5
+radius = 0.681814
 
 [node name="Mob" type="KinematicBody"]
-script = ExtResource( 1 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 0.998053, 0, 0, 0 )
+script = SubResource( 3 )
 
 [node name="MeshInstance" type="MeshInstance" parent="."]
-transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0 )
-mesh = SubResource( 1 )
+transform = Transform( 0.5, 0, 0, 0, -2.18557e-008, -0.5, 0, 0.5, -2.18557e-008, 0, 0, 0 )
+cast_shadow = 0
+mesh = ExtResource( 1 )
 material/0 = null
 
 [node name="CollisionShape" type="CollisionShape" parent="."]
-transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0 )
+transform = Transform( 1, 0, 0, 0, -4.37114e-008, -1, 0, 1, -4.37114e-008, 0, 0, 0 )
 shape = SubResource( 2 )
 
 [node name="HealthBar3D" parent="." instance=ExtResource( 2 )]
