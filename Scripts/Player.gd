@@ -2,7 +2,7 @@ extends KinematicBody
 
 onready var camera = $RotationHelper/Camera
 onready var rotation_helper = $RotationHelper
-onready var muzzle = $RotationHelper/Gun/Muzzle
+onready var muzzle = $RotationHelper/Gun/Muzzle 
 var Bullet = preload("res://Scenes/Bullet.tscn")
 
 
