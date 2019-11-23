@@ -206,5 +206,7 @@ transform = Transform( -0.0567071, 0, 0, 0, -0.0567071, 0, 0, 0, -0.0625001, -7.
 ] instance=ExtResource( 5 )]
 transform = Transform( -0.0567071, 0, 0, 0, -0.0567071, 0, 0, 0, -0.0623784, -4.52534, 0.454196, 2.2272 )
 
-[node name="Mob4" parent="." instance=ExtResource( 5 )]
+[node name="Mob4" parent="." groups=[
+"Turkey",
+] instance=ExtResource( 5 )]
 transform = Transform( -0.0567071, 0, 0, 0, -0.0567071, 0, 0, 0, -0.062257, -13.1365, 0.370764, 15.6922 )
