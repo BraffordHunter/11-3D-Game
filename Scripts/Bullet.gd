@@ -21,3 +21,4 @@ func _on_Bullet_body_entered(body):
 		#put any other commands here(sound effects, health, etc.)
 		queue_free()
 		body.queue_free()
+		

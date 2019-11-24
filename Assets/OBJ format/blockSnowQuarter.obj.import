@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/blockSnowQuarter.obj-a8d24692a48004fc831218481aea352c.mesh"
+
+[deps]
+
+files=[ "res://.import/blockSnowQuarter.obj-a8d24692a48004fc831218481aea352c.mesh" ]
+
+source_file="res://Assets/OBJ format/blockSnowQuarter.obj"
+dest_files=[ "res://.import/blockSnowQuarter.obj-a8d24692a48004fc831218481aea352c.mesh", "res://.import/blockSnowQuarter.obj-a8d24692a48004fc831218481aea352c.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true
