@@ -1,13 +1,14 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://Scripts/World.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Fall Leaves.jpg" type="Texture" id=2]
 [ext_resource path="res://Assets/10447_Pine_Tree_v1_Diffuse.jpg" type="Texture" id=3]
 [ext_resource path="res://Assets/Fallforest.jpg" type="Texture" id=4]
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=5]
-[ext_resource path="res://Scenes/Mob.tscn" type="PackedScene" id=6]
-[ext_resource path="res://Scenes/Mob.gd" type="Script" id=7]
-[ext_resource path="res://Scenes/Deer.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Scenes/Label.gd" type="Script" id=6]
+[ext_resource path="res://Scenes/Mob.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Scenes/Mob.gd" type="Script" id=8]
+[ext_resource path="res://Scenes/Deer.tscn" type="PackedScene" id=9]
 
 [sub_resource type="SpatialMaterial" id=1]
 albedo_texture = ExtResource( 2 )
@@ -49,12 +50,6 @@ material_override = SubResource( 5 )
 mesh = SubResource( 6 )
 material/0 = null
 
-[node name="MeshInstance4" type="MeshInstance" parent="Ground"]
-transform = Transform( -0.0807373, -0.991689, -0.100177, -0.996725, 0.0807901, 0.00353961, 0.00458329, 0.100135, -0.994963, -24.7356, 17.1301, 2.24333 )
-material_override = SubResource( 5 )
-mesh = SubResource( 6 )
-material/0 = null
-
 [node name="MeshInstance3" type="MeshInstance" parent="Ground"]
 transform = Transform( 0.0158597, -0.0890911, -0.995897, -0.976081, -0.217371, 0.00390158, -0.216827, 0.972015, -0.0904072, -0.39913, 17.3288, -20.0393 )
 material_override = SubResource( 5 )
@@ -80,7 +75,6 @@ shadow_color = Color( 0.129412, 0.145098, 0.160784, 1 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.61343, 0 )
 
 [node name="HUD" type="Node2D" parent="."]
-editor/display_folded = true
 
 [node name="ColorRect" type="ColorRect" parent="HUD"]
 margin_right = 80.0
@@ -93,172 +87,173 @@ margin_bottom = 30.0
 text = "Score: 0
 "
 valign = 1
+script = ExtResource( 6 )
 
 [node name="Mob" parent="." groups=[
 "Turkey",
-] instance=ExtResource( 6 )]
+] instance=ExtResource( 7 )]
 transform = Transform( -0.0567071, 0, 0, 0, -0.0567071, 0, 0, 0, -0.062622, 12.1505, 0.348913, 15.053 )
 input_capture_on_drag = true
-script = ExtResource( 7 )
+script = ExtResource( 8 )
 
 [node name="Mob20" parent="." groups=[
 "Turkey",
-] instance=ExtResource( 6 )]
+] instance=ExtResource( 7 )]
 transform = Transform( -0.0567071, 0, 0, 0, -0.0567071, 0, 0, 0, -0.062622, 13.5419, 0.348913, -11.2357 )
 input_capture_on_drag = true
-script = ExtResource( 7 )
+script = ExtResource( 8 )
 
 [node name="Mob19" parent="." groups=[
 "Turkey",
-] instance=ExtResource( 6 )]
+] instance=ExtResource( 7 )]
 transform = Transform( -0.0567071, 0, 0, 0, -0.0567071, 0, 0, 0, -0.062622, -4.06013, 0.348913, -11.4014 )
 input_capture_on_drag = true
-script = ExtResource( 7 )
+script = ExtResource( 8 )
 
 [node name="Mob18" parent="." groups=[
 "Turkey",
-] instance=ExtResource( 6 )]
+] instance=ExtResource( 7 )]
 transform = Transform( -0.0567071, 0, 0, 0, -0.0567071, 0, 0, 0, -0.062622, 5.75507, 0.348913, -14.257 )
 input_capture_on_drag = true
-script = ExtResource( 7 )
+script = ExtResource( 8 )
 
 [node name="Mob17" parent="." groups=[
 "Turkey",
-] instance=ExtResource( 6 )]
+] instance=ExtResource( 7 )]
 transform = Transform( -0.0567071, 0, 0, 0, -0.0567071, 0, 0, 0, -0.062622, -17.682, 0.348913, -14.1847 )
 input_capture_on_drag = true
-script = ExtResource( 7 )
+script = ExtResource( 8 )
 
 [node name="Mob16" parent="." groups=[
 "Turkey",
-] instance=ExtResource( 6 )]
+] instance=ExtResource( 7 )]
 transform = Transform( -0.0567071, 0, 0, 0, -0.0567071, 0, 0, 0, -0.062622, 8.49543, 0.348913, 20.985 )
 input_capture_on_drag = true
-script = ExtResource( 7 )
+script = ExtResource( 8 )
 
 [node name="Mob15" parent="." groups=[
 "Turkey",
-] instance=ExtResource( 6 )]
+] instance=ExtResource( 7 )]
 transform = Transform( -0.0567071, 0, 0, 0, -0.0567071, 0, 0, 0, -0.062622, -14.6292, 0.348913, -10.8317 )
 input_capture_on_drag = true
-script = ExtResource( 7 )
+script = ExtResource( 8 )
 
 [node name="Mob14" parent="." groups=[
 "Turkey",
-] instance=ExtResource( 6 )]
+] instance=ExtResource( 7 )]
 transform = Transform( -0.0567071, 0, 0, 0, -0.0567071, 0, 0, 0, -0.062622, 6.38916, 0.348913, -3.54502 )
 input_capture_on_drag = true
-script = ExtResource( 7 )
+script = ExtResource( 8 )
 
 [node name="Mob13" parent="." groups=[
 "Turkey",
-] instance=ExtResource( 6 )]
+] instance=ExtResource( 7 )]
 transform = Transform( -0.0567071, 0, 0, 0, -0.0567071, 0, 0, 0, -0.062622, 6.58106, 0.348913, 5.03639 )
 input_capture_on_drag = true
-script = ExtResource( 7 )
+script = ExtResource( 8 )
 
 [node name="Mob12" parent="." groups=[
 "Turkey",
-] instance=ExtResource( 6 )]
+] instance=ExtResource( 7 )]
 transform = Transform( -0.0567071, 0, 0, 0, -0.0567071, 0, 0, 0, -0.062622, -18.6194, 0.348913, 8.7393 )
 input_capture_on_drag = true
-script = ExtResource( 7 )
+script = ExtResource( 8 )
 
 [node name="Mob11" parent="." groups=[
 "Turkey",
-] instance=ExtResource( 6 )]
+] instance=ExtResource( 7 )]
 transform = Transform( -0.0567071, 0, 0, 0, -0.0567071, 0, 0, 0, -0.062622, -8.19418, 0.348913, -5.69046 )
 input_capture_on_drag = true
-script = ExtResource( 7 )
+script = ExtResource( 8 )
 
 [node name="Mob10" parent="." groups=[
 "Turkey",
-] instance=ExtResource( 6 )]
+] instance=ExtResource( 7 )]
 transform = Transform( -0.0567071, 0, 0, 0, -0.0567071, 0, 0, 0, -0.062622, -13.7568, 0.348913, -1.25935 )
 input_capture_on_drag = true
-script = ExtResource( 7 )
+script = ExtResource( 8 )
 
 [node name="Mob9" parent="." groups=[
 "Turkey",
-] instance=ExtResource( 6 )]
+] instance=ExtResource( 7 )]
 transform = Transform( -0.0567071, 0, 0, 0, -0.0567071, 0, 0, 0, -0.062622, 3.88769, 0.348913, 14.3798 )
 input_capture_on_drag = true
-script = ExtResource( 7 )
+script = ExtResource( 8 )
 
 [node name="Mob8" parent="." groups=[
 "Turkey",
-] instance=ExtResource( 6 )]
+] instance=ExtResource( 7 )]
 transform = Transform( -0.0567071, 0, 0, 0, -0.0567071, 0, 0, 0, -0.062622, -6.75035, 0.348913, 17.7905 )
 input_capture_on_drag = true
-script = ExtResource( 7 )
+script = ExtResource( 8 )
 
 [node name="Mob7" parent="." groups=[
 "Turkey",
-] instance=ExtResource( 6 )]
+] instance=ExtResource( 7 )]
 transform = Transform( -0.0567071, 0, 0, 0, -0.0567071, 0, 0, 0, -0.062622, -20.5852, 0.348913, -0.494721 )
 input_capture_on_drag = true
-script = ExtResource( 7 )
+script = ExtResource( 8 )
 
 [node name="Mob6" parent="." groups=[
 "Turkey",
-] instance=ExtResource( 6 )]
+] instance=ExtResource( 7 )]
 transform = Transform( -0.0567071, 0, 0, 0, -0.0567071, 0, 0, 0, -0.062622, -18.159, 0.348913, 16.078 )
 input_capture_on_drag = true
-script = ExtResource( 7 )
+script = ExtResource( 8 )
 
 [node name="Mob5" parent="." groups=[
 "Turkey",
-] instance=ExtResource( 6 )]
+] instance=ExtResource( 7 )]
 transform = Transform( -0.0567071, 0, 0, 0, -0.0567071, 0, 0, 0, -0.062622, -11.5561, 0.348913, 4.17904 )
 input_capture_on_drag = true
-script = ExtResource( 7 )
+script = ExtResource( 8 )
 
 [node name="Mob2" parent="." groups=[
 "Turkey",
-] instance=ExtResource( 6 )]
+] instance=ExtResource( 7 )]
 transform = Transform( -0.0567071, 0, 0, 0, -0.0567071, 0, 0, 0, -0.0625001, -7.43124, 0.4766, 10.8761 )
 
 [node name="Mob3" parent="." groups=[
 "Turkey",
-] instance=ExtResource( 6 )]
+] instance=ExtResource( 7 )]
 transform = Transform( -0.0567071, 0, 0, 0, -0.0567071, 0, 0, 0, -0.0623784, -4.52534, 0.454196, -3.14117 )
 
 [node name="Mob4" parent="." groups=[
 "Turkey",
-] instance=ExtResource( 6 )]
+] instance=ExtResource( 7 )]
 transform = Transform( -0.0567071, 0, 0, 0, -0.0567071, 0, 0, 0, -0.062257, -13.1365, 0.370764, 20.7154 )
 
 [node name="Deer" parent="." groups=[
 "Turkey",
-] instance=ExtResource( 8 )]
+] instance=ExtResource( 9 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.2111, 1.49705, -9.57089 )
 
 [node name="Deer7" parent="." groups=[
 "Turkey",
-] instance=ExtResource( 8 )]
+] instance=ExtResource( 9 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0969, 1.49705, -19.7366 )
 
 [node name="Deer6" parent="." groups=[
 "Turkey",
-] instance=ExtResource( 8 )]
+] instance=ExtResource( 9 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.32721, 1.49705, -15.1722 )
 
 [node name="Deer5" parent="." groups=[
 "Turkey",
-] instance=ExtResource( 8 )]
+] instance=ExtResource( 9 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15.6074, 1.49705, 6.40027 )
 
 [node name="Deer4" parent="." groups=[
 "Turkey",
-] instance=ExtResource( 8 )]
+] instance=ExtResource( 9 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.93213, 1.49705, -0.0478516 )
 
 [node name="Deer3" parent="." groups=[
 "Turkey",
-] instance=ExtResource( 8 )]
+] instance=ExtResource( 9 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.4471, 1.49705, 3.69325 )
 
 [node name="Deer2" parent="." groups=[
 "Turkey",
-] instance=ExtResource( 8 )]
+] instance=ExtResource( 9 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.234254, 1.49705, 14.4028 )

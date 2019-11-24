@@ -1,6 +1,7 @@
 extends Area
 
-var speed = 15
+var speed = 27
+
 var velocity = Vector3()
 
 func start(xform):
