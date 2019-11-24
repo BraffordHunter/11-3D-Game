@@ -1,6 +1,6 @@
 extends Area
 
-var speed = 27
+var speed = 270
 
 var velocity = Vector3()
 
