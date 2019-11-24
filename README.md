@@ -1,2 +1,2 @@
 # 11-3D-Game
-The Godot 3-D Project. This will be a project with a specific goal. The game difficulty will get harder over time. There will be a character accomplishing a goal of some kind.
+Happy Thanksgiving! This is a turkey shooting game. There are also evergreen Deer included. An idea that I thought of that is a combination of deer 3-D model and an evergreen material. There is a realistic camoflage pistol grip shotgun, that shoots realistic shotgun shells. A fall scene is where the game takes place.   
