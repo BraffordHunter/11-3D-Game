@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Assets/10447_Pine_Tree_v1_Diffuse.jpg" type="Texture" id=1]
+[ext_resource path="res://Assets/10447_Pine_Tree_v1_L3b.obj" type="ArrayMesh" id=2]
+
+[sub_resource type="SpatialMaterial" id=1]
+albedo_texture = ExtResource( 1 )
+
+[sub_resource type="CapsuleShape" id=2]
+radius = 1.85219
+
+[node name="Pinetree" type="KinematicBody"]
+
+[node name="MeshInstance" type="MeshInstance" parent="."]
+material_override = SubResource( 1 )
+mesh = ExtResource( 2 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+shape = SubResource( 2 )
