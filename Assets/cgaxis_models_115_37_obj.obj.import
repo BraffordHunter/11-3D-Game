@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/cgaxis_models_115_37_obj.obj-fa7c4d296be7f86d348c13f14d373f16.mesh"
+
+[deps]
+
+files=[ "res://.import/cgaxis_models_115_37_obj.obj-fa7c4d296be7f86d348c13f14d373f16.mesh" ]
+
+source_file="res://Assets/cgaxis_models_115_37_obj.obj"
+dest_files=[ "res://.import/cgaxis_models_115_37_obj.obj-fa7c4d296be7f86d348c13f14d373f16.mesh", "res://.import/cgaxis_models_115_37_obj.obj-fa7c4d296be7f86d348c13f14d373f16.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

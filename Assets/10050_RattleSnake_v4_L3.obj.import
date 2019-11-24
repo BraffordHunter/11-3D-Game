@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/10050_RattleSnake_v4_L3.obj-e0c8659675469ff34b999390fd6b3b3b.mesh"
+
+[deps]
+
+files=[ "res://.import/10050_RattleSnake_v4_L3.obj-e0c8659675469ff34b999390fd6b3b3b.mesh" ]
+
+source_file="res://Assets/10050_RattleSnake_v4_L3.obj"
+dest_files=[ "res://.import/10050_RattleSnake_v4_L3.obj-e0c8659675469ff34b999390fd6b3b3b.mesh", "res://.import/10050_RattleSnake_v4_L3.obj-e0c8659675469ff34b999390fd6b3b3b.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

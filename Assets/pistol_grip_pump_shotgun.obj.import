@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/pistol_grip_pump_shotgun.obj-98a9072ef7fa69bacf3f056533859ac4.mesh"
+
+[deps]
+
+files=[ "res://.import/pistol_grip_pump_shotgun.obj-98a9072ef7fa69bacf3f056533859ac4.mesh" ]
+
+source_file="res://Assets/pistol_grip_pump_shotgun.obj"
+dest_files=[ "res://.import/pistol_grip_pump_shotgun.obj-98a9072ef7fa69bacf3f056533859ac4.mesh", "res://.import/pistol_grip_pump_shotgun.obj-98a9072ef7fa69bacf3f056533859ac4.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true
