@@ -3,6 +3,8 @@ extends KinematicBody
 onready var camera = $RotationHelper/Camera
 onready var rotation_helper = $RotationHelper
 onready var muzzle = $RotationHelper/Gun/Muzzle 
+onready var World = get_node("/root/World")
+
 var Bullet = preload("res://Scenes/Bullet.tscn")
 
 
@@ -17,6 +19,8 @@ var push_back = 0
 var push_back_speed = 12
 
 var velocity = Vector3()
+onready var initial_position = transform.origin
+onready var initial_global_position = global_transform.origin
 
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
@@ -65,3 +69,9 @@ func _physics_process(delta):
 		velocity += c * push_back_speed
 		push_back -= 1
 	move_and_slide(velocity, Vector3.UP, true)
+	if (global_transform.origin.y < -200):
+		World.decrease_lives()
+		transform.origin = initial_position
+		global_transform.origin = initial_global_position
+		velocity = Vector3(0,0,0)
+		move_and_slide(velocity, Vector3.UP, true)
