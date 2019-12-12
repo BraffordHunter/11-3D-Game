@@ -1,6 +1,9 @@
 extends Label
 
-#func _ready():
- #update_score()
+onready var World = get_node("/root/World")
 
-#func update_score():text ="Score: " + str(get_parent().score)
+func _ready():
+	update_score()
+
+func update_score():
+	text = "Score: " + str(World.score)
